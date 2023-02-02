@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int a;
+    printf("Enter no. of lines you want?\n");
+    scanf("%d",&a);
+    for (int i=1; i<=a; ++i){
+        for (int spaces=1; spaces<=a-i; ++spaces){
+            printf(" ");
+        }
+        for (int chr=1; chr<=i; ++chr){
+            printf("%d",chr);
+        }printf("\n");
+
+    }return 0;
+}
